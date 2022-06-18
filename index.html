@@ -57,6 +57,7 @@
     <link rel="stylesheet" href="css/works.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/thanks.css" />
+    <link rel="stylesheet" href="css/tweet.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -91,6 +92,9 @@
           </li>
           <li>
             <a href="#thanks" onclick="clickMenuLink('thanks')"> Thanks </a>
+          </li>
+          <li>
+            <a href="#tweet" onclick="clickMenuLink('tweet')"> Tweet </a>
           </li>
         </ul>
         <input id="switch" type="checkbox" hidden onclick="darkModeShift()" />
@@ -960,6 +964,40 @@
         </div>
 
         <p>And, I would like to thank everyone who visited RYO CV !!😆</p>
+      </div>
+    </div>
+
+    <div id="tweet" class="pages" style="visibility: hidden">
+      <div class="contents">
+        <h1 class="title">Tweet</h1>
+        <p>I started Twitter without tweets.</p>
+        <div id="tweet_contents" class="twitter">
+          <a
+            class="twitter-timeline"
+            data-lang="en"
+            data-width="600"
+            data-height="500"
+            data-dnt="true"
+            data-theme="dark"
+            href="https://twitter.com/RYO_nami?ref_src=twsrc%5Etfw"
+            >Tweets by RYO_nami</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
+        <p>
+          produce by
+          <a
+            href="https://publish.twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="thanks-link"
+            >publish.twitter.com</a
+          >
+        </p>
       </div>
     </div>
 
