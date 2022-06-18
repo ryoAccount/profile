@@ -17,31 +17,5 @@
 
 #tweet .twitter {
     display: none;
-    margin-top: 40px;
-}
-
-#tweet .contents i {
-  display: block;
-  margin-top: 10px;
-}
-
-#tweet .contents p a {
-  margin: 0;
-  font-style: italic;
-}
-
-#tweet .contents p a::after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  content: '';
-  width: 0;
-  height: 2px;
-  background-color: #31aae2;
-  transition: .3s;
-  transform: translateX(-50%);
-}
-
-#tweet .contents p a:hover::after{
-  width: 100%;
+    margin-top: 10px;
 }
