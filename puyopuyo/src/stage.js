@@ -48,7 +48,7 @@ class Stage {
       for (let x = 0; x < Config.stageCols; x++) {
         const puyo = line[x];
         if (puyo >= 1 && puyo <= 5) {
-          // line[x] = {puyo: puyo, element: this.setPuyo(x, y, puyo)};
+          line[x] = { puyo: puyo, element: this.setPuyo(x, y, puyo) };
           this.setPuyo(x, y, puyo);
           puyoCount++;
         } else {
