@@ -4,3 +4,6 @@
 node_modules
 dist
 .cache
+# lighthouse ci
+.lighthouseci
+manifest.json

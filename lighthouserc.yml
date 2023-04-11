@@ -1,0 +1,6 @@
+ci:
+  collect:
+    url:
+      - "https://ryoaccount.github.io/profile/"
+  upload:
+    target: "temporary-public-storage"
