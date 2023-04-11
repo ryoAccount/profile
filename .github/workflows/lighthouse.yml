@@ -1,0 +1,43 @@
+# Lighthouse
+# https://github.com/GoogleChrome/lighthouse-ci
+name: "Lighthouse CI"
+
+on:
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  exec:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Node.js
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      # run
+      - name: Run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.11.x
+          npm run lighthouse
+
+      # output
+      - name: Read lighthouse report url
+        id: lighthouse-report-url
+        uses: juliangruber/read-file-action@v1.0.0
+        with:
+          path: .lighthouseci/links.json
+
+      # PR comment
+      - name: Lighthouse result comment
+        uses: marocchino/sticky-pull-request-comment@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          header: lighthouse-ci-result
+          message: |
+            ## Lighthouse Report
+            ${{ steps.lighthouse-report-url.outputs.content }}

@@ -1,9 +1,9 @@
 {
-  "short_name": "My CV",
-  "name": "My CV",
+  "short_name": "RYO CV",
+  "name": "RYO CV",
   "dir": "auto",
   "lang": "en",
-  "description": "Hello, I'm R.Matsunami. Welcome to My CV.",
+  "description": "Hello, I'm RYO. Welcome to My CV.",
   "icons": [{
     "src": "img/icon128.png",
     "type": "image/png",
