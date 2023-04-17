@@ -1,6 +1,6 @@
-## Ryo CV ?
+## What are these?
 
-Ryo CV is my CV!!
+This is a portfolio site where I post my work and career.
 
 ## GitHub Pages
 
