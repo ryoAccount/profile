@@ -1,4 +1,4 @@
-const MENU_LINKS = ["home", "works", "about", "thanks", "tweet"];
+const MENU_LINKS = ["home", "works", "about", "thanks"];
 
 function clickMenuLink(menu) {
   MENU_LINKS.forEach((menuLink) => {
@@ -10,12 +10,6 @@ function clickMenuLink(menu) {
       document.getElementById(menuLink).style.visibility = "hidden";
     }
   });
-
-  if (menu === "tweet") {
-    document.getElementById("tweet_contents").style.display = "inline-block";
-  } else {
-    document.getElementById("tweet_contents").style.display = "none";
-  }
 
   document.getElementById("burger").checked = false;
 }
