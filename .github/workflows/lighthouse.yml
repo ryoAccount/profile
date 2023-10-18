@@ -10,6 +10,7 @@ jobs:
   exec:
     runs-on: ubuntu-latest
     steps:
+      - uses: Kesin11/actions-timeline@v1
       - name: Checkout
         uses: actions/checkout@v3
 
