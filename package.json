@@ -2,7 +2,9 @@
   "name": "ryo-cv",
   "version": "1.0.0",
   "description": "Hello, I'm RYO. Welcome to My CV.",
-  "keywords": ["cv"],
+  "keywords": [
+    "cv"
+  ],
   "license": "MIT",
   "author": "RYO",
   "scripts": {
@@ -10,10 +12,23 @@
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lighthouse": "lhci autorun --collect.numberOfRuns=1"
+    "lighthouse": "lhci autorun --collect.numberOfRuns=1",
+    "lint:html": "eslint index.html",
+    "lint:html:fix": "eslint --fix index.html",
+    "lint:js": "eslint ./js/profile.js",
+    "lint:js:fix": "eslint --fix ./js/profile.js"
   },
   "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.2.0",
+    "eslint-plugin-promise": "^6.1.1",
     "node-forge": ">=0.10.0",
     "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
   }
 }
