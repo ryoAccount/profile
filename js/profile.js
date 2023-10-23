@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const MENU_LINKS = ["home", "works", "about", "thanks", "tweet"];
 
 function clickMenuLink(menu) {
